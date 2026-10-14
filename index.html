@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adhithyan S | Penetration Tester</title>
+<meta name="description" content="Adhithyan S, Penetration Tester. CPENT v2 and CEH v13 certified. Portfolio of certifications, projects, and offensive security skills.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230B0F19%22/><text x=%2250%22 y=%2268%22 font-size=%2258%22 font-family=%22Arial%22 fill=%22%2300D9A6%22 text-anchor=%22middle%22>A</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">AS<span class="dot">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#cpent" class="nav-link">CPENT Exam</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="assets/resume.pdf" class="btn btn-small" target="_blank" rel="noopener">Resume</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="container hero-inner">
+    <p class="eyebrow reveal">Penetration Tester, Bangalore</p>
+    <h1 class="hero-title reveal">
+      Hi, I am <span class="gradient-text">Adhithyan S</span>.
+    </h1>
+    <p class="hero-sub reveal">
+      <span class="typed" id="typed"></span><span class="cursor">|</span>
+    </p>
+    <p class="hero-desc reveal">
+      I break things on purpose, then write up exactly how I did it. CPENT v2 and CEH v13
+      certified, with evidence-documented work across Active Directory exploitation, binary
+      exploitation, firmware reverse engineering, and web application testing.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="assets/resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">Download Resume</a>
+      <a href="#projects" class="btn btn-ghost">See Projects</a>
+      <a href="#contact" class="btn btn-ghost">Contact Me</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <span class="stat-num" data-count="48" data-suffix="/53">0</span>
+        <span class="stat-label">CPENT challenges solved</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="2" data-suffix="">0</span>
+        <span class="stat-label">Published security projects</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="15" data-suffix="">0</span>
+        <span class="stat-label">Recon modules in WebRecon</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="2" data-suffix="">0</span>
+        <span class="stat-label">EC-Council certifications</span>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+</header>
+
+<main>
+
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-tag reveal">01. About</p>
+      <h2 class="section-title reveal">What I actually do</h2>
+      <div class="about-grid">
+        <p class="about-text reveal">
+          I am an entry-level penetration tester based in Bangalore, holding the EC-Council
+          CPENT v2 and CEH v13 certifications. My focus is offensive security: finding real
+          weaknesses before someone with worse intentions does, then documenting them clearly
+          enough that an engineering team can actually fix them.
+        </p>
+        <p class="about-text reveal">
+          Most of what I know, I proved under exam conditions rather than just studying for a
+          badge. In the CPENT practical exam I compromised a segmented Active Directory forest,
+          built a working remote buffer overflow exploit from scratch, reverse engineered six
+          firmware images, and chained web and Linux privilege escalation bugs into full host
+          compromise, all documented with evidence. Outside the exam room, I built and shipped
+          WebShield.AI (a phishing detection browser extension) solo, from research to two
+          browser store launches, and I maintain WebRecon, an open source reconnaissance tool.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <p class="section-tag reveal">02. Skills</p>
+      <h2 class="section-title reveal">Technical skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <h3>Penetration Testing Methodology</h3>
+          <div class="tags">
+            <span class="tag">OWASP Top 10</span><span class="tag">SQL Injection</span>
+            <span class="tag">XSS</span><span class="tag">IDOR</span><span class="tag">SSRF</span>
+            <span class="tag">CSRF</span><span class="tag">RCE</span><span class="tag">Auth Bypass</span>
+            <span class="tag">API Pentesting</span><span class="tag">JWT / OAuth2</span>
+            <span class="tag">CVSS Scoring</span><span class="tag">Report Writing</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3>Active Directory &amp; Windows</h3>
+          <div class="tags">
+            <span class="tag">LDAP Enumeration</span><span class="tag">AS-REP Roasting</span>
+            <span class="tag">RODC Assessment</span><span class="tag">Impacket</span>
+            <span class="tag">NetExec</span><span class="tag">Privilege Escalation</span>
+            <span class="tag">John the Ripper</span><span class="tag">hashcat</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3>Binary Exploitation</h3>
+          <div class="tags">
+            <span class="tag">GDB</span><span class="tag">Ghidra</span><span class="tag">pwntools</span>
+            <span class="tag">Fuzzing</span><span class="tag">Offset Analysis</span>
+            <span class="tag">checksec</span><span class="tag">Buffer Overflows</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3>Web Application &amp; CMS</h3>
+          <div class="tags">
+            <span class="tag">Burp Suite</span><span class="tag">sqlmap</span>
+            <span class="tag">Gobuster</span><span class="tag">Joomscan</span>
+            <span class="tag">WPScan</span><span class="tag">Hydra</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3>Firmware &amp; IoT</h3>
+          <div class="tags">
+            <span class="tag">Binwalk</span><span class="tag">SQLite3</span>
+            <span class="tag">File System Extraction</span><span class="tag">Embedded Credentials</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3>Recon &amp; Vulnerability Assessment</h3>
+          <div class="tags">
+            <span class="tag">Subfinder</span><span class="tag">Amass</span><span class="tag">FFUF</span>
+            <span class="tag">Dirsearch</span><span class="tag">Nuclei</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3>Linux Privilege Escalation</h3>
+          <div class="tags">
+            <span class="tag">SUID Abuse</span><span class="tag">Capability Abuse</span>
+            <span class="tag">Sudo Misconfiguration</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3>Scripting, Cloud &amp; Platforms</h3>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Shell Scripting</span>
+            <span class="tag">JavaScript</span><span class="tag">AWS / Azure / GCP Basics</span>
+            <span class="tag">ISO 27001 ISMS</span><span class="tag">Kali Linux</span>
+            <span class="tag">SSH SOCKS Pivoting</span><span class="tag">REST API Security</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="certifications">
+    <div class="container">
+      <p class="section-tag reveal">03. Certifications</p>
+      <h2 class="section-title reveal">Certifications &amp; training</h2>
+      <div class="cert-grid">
+
+        <div class="cert-card cert-featured reveal">
+          <div class="cert-badge">CPENT</div>
+          <h3>Certified Penetration Testing Professional (CPENT) v2</h3>
+          <p class="cert-issuer">EC-Council, ANSI/ANAB accredited</p>
+          <p class="cert-meta">Issued 10 Oct 2026 . Valid through 01 Nov 2027 . Certificate No. ECC3507491268</p>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">CEH</div>
+          <h3>Certified Ethical Hacker (CEH v13)</h3>
+          <p class="cert-issuer">EC-Council</p>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">ADCD</div>
+          <h3>Advanced Diploma in Cyber Defense</h3>
+          <p class="cert-issuer">Red Team, Hacker Academy</p>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">ISO</div>
+          <h3>ISO/IEC 27001:2022 Information Security Associate</h3>
+          <p class="cert-issuer">SkillFront</p>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">DEL</div>
+          <h3>Cybersecurity Job Simulation</h3>
+          <p class="cert-issuer">Deloitte, via Forage</p>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">TCS</div>
+          <h3>Cybersecurity Analyst Job Simulation</h3>
+          <p class="cert-issuer">TCS, via Forage. IAM and platform integration focus</p>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">CTF</div>
+          <h3>CTF Achievement</h3>
+          <p class="cert-issuer">Technovally Hackfest 1.0</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="cpent">
+    <div class="container">
+      <p class="section-tag reveal">04. Proof of Work</p>
+      <h2 class="section-title reveal">CPENT practical exam results</h2>
+      <p class="section-intro reveal">
+        A five zone, time bound practical exam taken over VPN against segmented, hardened live
+        environments. Every result below is backed by a documented methodology, not just a
+        checkbox.
+      </p>
+
+      <div class="cpent-grid">
+
+        <div class="cpent-card reveal">
+          <div class="cpent-head">
+            <h3>Active Directory</h3>
+            <span class="cpent-score">11 / 12</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" data-progress="91.7"></div></div>
+          <p>LDAP enumeration, AS-REP roasting via Impacket, offline hash cracking with John and
+          hashcat, and a Read-Only Domain Controller secret-exposure bypass.</p>
+        </div>
+
+        <div class="cpent-card reveal">
+          <div class="cpent-head">
+            <h3>Binary Exploitation</h3>
+            <span class="cpent-score">9 / 9</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" data-progress="100"></div></div>
+          <p>Crash analysis and exploit development with GDB, pwntools, and Ghidra. Built a
+          working remote buffer overflow exploit from scratch.</p>
+        </div>
+
+        <div class="cpent-card reveal">
+          <div class="cpent-head">
+            <h3>IoT / Firmware</h3>
+            <span class="cpent-score">13 / 13</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" data-progress="100"></div></div>
+          <p>Reverse engineered six firmware images with Binwalk and SQLite3, recovering embedded
+          credentials and system details.</p>
+        </div>
+
+        <div class="cpent-card reveal">
+          <div class="cpent-head">
+            <h3>CTF Style Linux Range</h3>
+            <span class="cpent-score">13 / 13</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" data-progress="100"></div></div>
+          <p>SQL injection, file upload RCE, CMS enumeration, and privilege escalation (SUID,
+          sudo, capabilities) across three independent hosts.</p>
+        </div>
+
+        <div class="cpent-card reveal">
+          <div class="cpent-head">
+            <h3>Web Application</h3>
+            <span class="cpent-score">2 / 6</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" data-progress="33.3"></div></div>
+          <p>Access control and logic flaw exploitation. The weakest zone for me on the day, and
+          I would rather show that honestly than hide it.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section-tag reveal">05. Projects</p>
+      <h2 class="section-title reveal">Things I have shipped</h2>
+
+      <div class="project-card reveal">
+        <div class="project-head">
+          <h3>WebShield.AI</h3>
+          <span class="project-tag">AI Phishing Detection</span>
+        </div>
+        <p class="project-role">Founder &amp; Sole Developer . 2025 to Present . Chrome Web Store &amp; Microsoft Edge Add-ons Store</p>
+        <p class="project-desc">
+          A Manifest V3 browser extension for real time phishing website detection, researched,
+          built, and published solo across two major browser platforms.
+        </p>
+        <ul class="project-points">
+          <li>Trained a Random Forest ML model on URL structure and domain reputation signals to classify malicious URLs in real time, served via a Python backend plus a PHP API bridge.</li>
+          <li>Identified and engineered defenses against interstitial and popup based attacks, plus tracker based data exfiltration via query parameter stripping.</li>
+          <li>Owned the full security product lifecycle solo: research, model training, API integration, and deployment across two browser stores.</li>
+        </ul>
+        <div class="project-stack">
+          <span class="tag">Python</span><span class="tag">PHP</span><span class="tag">JavaScript</span>
+          <span class="tag">Manifest V3</span><span class="tag">Random Forest</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-head">
+          <h3>WebRecon</h3>
+          <span class="project-tag">Open Source</span>
+        </div>
+        <p class="project-role">Python Web Reconnaissance Tool . github.com/4-dhi/-4-dhi-WebRecon</p>
+        <p class="project-desc">
+          A single Python tool that automates the full information gathering phase of a pentest
+          engagement across 15 tasks, instead of stitching together output from 10 or more
+          separate tools.
+        </p>
+        <ul class="project-points">
+          <li>Footprinting and enumeration: WHOIS, DNS, SSL/TLS, robots.txt, security.txt, sitemap discovery.</li>
+          <li>Application analysis: HTML source review, security headers, server fingerprinting, metadata extraction.</li>
+          <li>Infrastructure mapping: WAF detection, load balancer identification, directory enumeration, proxy and SSRF checks.</li>
+          <li>Validated end to end against OWASP Juice Shop, correctly flagging missing security headers, exposed configuration style paths, and proxy infrastructure details.</li>
+        </ul>
+        <div class="project-stack">
+          <span class="tag">Python 3</span><span class="tag">Requests</span><span class="tag">BeautifulSoup</span>
+          <span class="tag">Python-Whois</span><span class="tag">WAFW00F</span><span class="tag">LXML</span>
+        </div>
+        <a href="https://github.com/4-dhi/-4-dhi-WebRecon" class="project-link" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section-alt" id="contact">
+    <div class="container contact-container">
+      <p class="section-tag reveal">06. Contact</p>
+      <h2 class="section-title reveal">Let us talk</h2>
+      <p class="section-intro reveal">
+        Open to penetration testing, red team, and web application security roles in Bangalore.
+        The fastest way to reach me is email or LinkedIn.
+      </p>
+      <div class="contact-links reveal">
+        <a href="mailto:adhithyansatheesh2004@gmail.com" class="contact-link">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">adhithyansatheesh2004@gmail.com</span>
+        </a>
+        <a href="https://linkedin.com/in/adhithyan-s-pentester" class="contact-link" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">linkedin.com/in/adhithyan-s-pentester</span>
+        </a>
+        <a href="https://github.com/4-dhi" class="contact-link" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/4-dhi</span>
+        </a>
+      </div>
+      <a href="assets/resume.pdf" class="btn btn-primary reveal" target="_blank" rel="noopener">Download Resume (PDF)</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>Built by Adhithyan S. Bangalore, Karnataka.</p>
+    <p class="footer-note">Penetration Tester . CPENT v2 and CEH v13 Certified</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
