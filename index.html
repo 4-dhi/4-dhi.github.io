@@ -59,8 +59,8 @@
         <span class="stat-label">CPENT challenges solved</span>
       </div>
       <div class="stat">
-        <span class="stat-num" data-count="2" data-suffix="">0</span>
-        <span class="stat-label">Published security projects</span>
+        <span class="stat-num" data-count="3" data-suffix="">0</span>
+        <span class="stat-label">Security projects built</span>
       </div>
       <div class="stat">
         <span class="stat-num" data-count="15" data-suffix="">0</span>
@@ -95,7 +95,9 @@
           firmware images, and chained web and Linux privilege escalation bugs into full host
           compromise, all documented with evidence. Outside the exam room, I built and shipped
           WebShield.AI (a phishing detection browser extension) solo, from research to two
-          browser store launches, and I maintain WebRecon, an open source reconnaissance tool.
+          browser store launches, I maintain WebRecon, an open source reconnaissance tool, and I
+          built VulnProbe, a 16 module web vulnerability scanner with scope enforcement and
+          confidence scored findings.
         </p>
       </div>
     </div>
@@ -318,6 +320,29 @@
     <div class="container">
       <p class="section-tag reveal">05. Projects</p>
       <h2 class="section-title reveal">Things I have shipped</h2>
+
+      <div class="project-card reveal">
+        <div class="project-head">
+          <h3>VulnProbe</h3>
+          <span class="project-tag">Web Vulnerability Scanner</span>
+        </div>
+        <p class="project-role">Web Application Vulnerability Scanner (DAST) . 2026 . Python &amp; Flask</p>
+        <p class="project-desc">
+          An authorization first web application security scanner. It crawls a target, runs 16
+          pluggable security modules, and produces evidence backed findings with confidence levels,
+          CWE and OWASP mapping, and PDF and JSON reports, through a web dashboard, REST API, or CLI.
+        </p>
+        <ul class="project-points">
+          <li>16 detection modules: reflected XSS, error based and time based blind SQLi, OS command injection, SSRF, path traversal, CORS, CSRF, open redirect, clickjacking, Host header injection, sensitive file exposure, directory listing, and header and cookie audits.</li>
+          <li>Scope and safety core: every request and redirect hop is validated against an authorized scope, private and loopback targets are blocked via DNS resolution, scans require explicit authorization, and traffic is rate limited.</li>
+          <li>Verification engine that labels each finding confirmed, probable, or unverified, with out of band (OAST) token correlation to cut false positives on SSRF and blind command injection.</li>
+          <li>Playwright crawler with a requests fallback, endpoint discovery from JavaScript and OpenAPI specs, authenticated scanning with secret redaction, diagnostics that explain zero finding scans, optional Nuclei and OWASP ZAP adapters, and a 170 test offline pytest suite.</li>
+        </ul>
+        <div class="project-stack">
+          <span class="tag">Python</span><span class="tag">Flask</span><span class="tag">SQLite</span>
+          <span class="tag">Playwright</span><span class="tag">BeautifulSoup</span><span class="tag">ReportLab</span><span class="tag">pytest</span>
+        </div>
+      </div>
 
       <div class="project-card reveal">
         <div class="project-head">
